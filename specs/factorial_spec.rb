@@ -1,6 +1,11 @@
+require 'minitest/skip_dsl'
 require 'minitest/autorun'
 require 'minitest/reporters'
+require 'pry'
+
 require_relative '../lib/factorial'
+
+Minitest::Reporters.use! Minitest::Reporters::SpecReporter.new
 
 describe "factorial" do
   describe "basic tests" do
