@@ -1,31 +1,23 @@
 require 'pry'
 # Computes factorial of the input number and returns it
 def factorial(number)
-  if number == nil
-    raise ArgumentError.new("Nil is not an integer")
+  if number == nil || !(number.is_a? Integer)
+    raise ArgumentError.new("ArgumentError: #{number} is not an integer")
   end
 
-  if number <= 1
-    return number
+  if number == 1 || number == 0
+    return number ** 0
   end
 
 
-  result = 0
+  result = number
   step = number - 1
 
-  iteration = number % 10000
+  until step == 0
+      temp = result * step
+      result = temp
 
-
-  iteration.times do
-    if result == 0
-      result += number * step
-    end
-
-    result = result * step
-
-    step -= 1
-
-    binding.pry
+      step -= 1
   end
 
   return result
