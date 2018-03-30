@@ -1,7 +1,7 @@
 require 'pry'
 # Computes factorial of the input number and returns it
 def factorial(number)
-  if number == nil || !(number.is_a? Integer)
+  if !(number.is_a? Integer)
     raise ArgumentError.new("ArgumentError: #{number} is not an integer")
   end
 
