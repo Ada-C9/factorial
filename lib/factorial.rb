@@ -9,13 +9,11 @@ def factorial(number)
     return number ** 0
   end
 
-
   result = number
   step = number - 1
 
   until step == 0
-      temp = result * step
-      result = temp
+      result *= step
 
       step -= 1
   end
