@@ -2,7 +2,7 @@
 def factorial(number)
 
   if number.class != Integer || number < 0 || number == nil
-    raise ArgumentError.new("#{number} is either not a positive number")
+    raise ArgumentError.new("#{number} is not a positive number")
   end
 
   if number == 0
