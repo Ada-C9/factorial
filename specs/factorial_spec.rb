@@ -11,6 +11,10 @@ describe "factorial" do
     it "factorial(7) = 5040" do
       factorial(7).must_equal 5040
     end
+
+    it "factorial(8) = 40320" do
+      factorial(8).must_equal 40320
+    end
   end
 
   # check for edge cases
