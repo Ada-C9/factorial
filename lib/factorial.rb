@@ -5,7 +5,6 @@ def factorial(number)
   raise ArgumentError.new("Invalid number") if number == nil
   return 1 if number == 0
 
-  # binding.pry
   final_number = number
 
   (number - 1).times do
