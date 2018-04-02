@@ -2,7 +2,7 @@
 def factorial(number)
   if number.nil?
     raise ArgumentError.new('Cannot compute factorial for nil.')
-  end 
+  end
 
   total = 1
 
@@ -14,5 +14,3 @@ def factorial(number)
   return total
 
 end
-
-puts factorial(0)
