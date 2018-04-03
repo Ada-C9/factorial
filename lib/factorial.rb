@@ -2,7 +2,7 @@
 def factorial(number)
   if number == 0 || number == 1
     return 1
-  elsif number == nil
+  elsif number == nil || number < 0
     raise ArgumentError.new
   end
 
