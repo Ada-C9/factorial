@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require 'minitest/reporters'
-require_relative '../lib/factorial'
+# require_relative '../lib/factorial'
+require_relative '../lib/factorial_recursive'
 
 describe "factorial" do
   describe "basic tests" do
